@@ -10,7 +10,7 @@ import { useT } from '../i18n/useT';
 import { LangToggle } from '../components/LangToggle';
 import { motion, AnimatePresence } from 'motion/react';
 import { PublishModal } from '../components/PublishModal';
-import logo from 'figma:asset/357d6422865453eaa15dbb3adc1cbd8d88dbac78.png';
+import logo from 'src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"';
 
 // Vetustness: based on days remaining before expiry
 // >10 days left → yellow, 4-10 days → orange, ≤3 days → red
