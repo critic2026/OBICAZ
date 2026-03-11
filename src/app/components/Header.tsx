@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useUser } from '../context/UserContext';
 import { useT } from '../i18n/useT';
 import { LangToggle } from './LangToggle';
-import logo from 'figma:asset/357d6422865453eaa15dbb3adc1cbd8d88dbac78.png';
+import logo from 'https://images.unsplash.com/photo-1599305090748-3552d9a64fbb?w=100';
 
 export function Header() {
   const { userStatus, setUserStatus } = useUser();
