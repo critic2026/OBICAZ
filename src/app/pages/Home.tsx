@@ -11,7 +11,7 @@ import { useT } from '../i18n/useT';
 import { LangToggle } from '../components/LangToggle';
 import { motion, AnimatePresence } from 'motion/react';
 import { PublishModal } from '../components/PublishModal';
-import logo from 'figma:asset/357d6422865453eaa15dbb3adc1cbd8d88dbac78.png';
+import logo from 'src="https://placehold.co/400x300?text=Objet+Occasion';
 
 // ── MAP COMPONENT (pour membres) ─────────────────────────────────────────────
 function MapView() {
