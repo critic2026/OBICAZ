@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import { BadgeCheck, Shield, Phone } from 'lucide-react';
 import { useT } from '../i18n/useT';
-import logo from 'figma:asset/357d6422865453eaa15dbb3adc1cbd8d88dbac78.png';
+import logo from 'https://images.unsplash.com/photo-1555529669-26f9d103abdd?w=100';
 
 export function Footer() {
   const tr = useT();
