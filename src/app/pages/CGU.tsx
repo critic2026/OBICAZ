@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { ArrowLeft, Shield, ScrollText } from 'lucide-react';
-import logo from 'src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500"';
+import logo from 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500';
 
 const ARTICLES = [
   {
