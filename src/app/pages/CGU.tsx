@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { ArrowLeft, Shield, ScrollText } from 'lucide-react';
-import logo from 'figma:asset/357d6422865453eaa15dbb3adc1cbd8d88dbac78.png';
+import logo from 'src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500"';
 
 const ARTICLES = [
   {
