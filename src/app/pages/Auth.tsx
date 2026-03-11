@@ -4,7 +4,7 @@ import { ArrowLeft, Eye, EyeOff, BadgeCheck, Phone, Shield, CheckCircle2, Scroll
 import { motion, AnimatePresence } from 'motion/react';
 import { useUser } from '../context/UserContext';
 import { toast } from 'sonner';
-import logo from 'figma:asset/357d6422865453eaa15dbb3adc1cbd8d88dbac78.png';
+import logo from 'src="https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=500"';
 
 // ── RÈGLEMENT (résumé 14 articles) ──────────────────────────────────────────
 const CLUB_RULES_SUMMARY = [
