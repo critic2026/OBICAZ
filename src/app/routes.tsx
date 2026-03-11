@@ -8,14 +8,14 @@ import { Auth } from "./pages/Auth";
 import { Dashboard } from "./pages/Dashboard";
 import { CGU } from "./pages/CGU";
 import { ReglesClub } from "./pages/ReglesClub";
-import Index from "./pages/index";
+
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
     children: [
-      { index: true, Component: Index },
+      { Home: true, Component: Index },
       { path: "radar", Component: Radar },
       { path: "annonces", Component: Listings },
       { path: "annonces/:id", Component: ListingDetail },
