@@ -1,0 +1,98 @@
+Tu es un product designer senior dans Figma. Objectif : reprendre le design/infographie déjà proposé (même identité visuelle, même ton), MAIS corriger le contenu pour qu’il soit cohérent avec la V1 réelle et intégrer toutes les contraintes produit ci-dessous. Tu dois produire des écrans UI (mobile d’abord, puis desktop) + un prototype cliquable. Style : moderne, “club premium” mais jeune, lisible sur mobile.
+
+PROJET
+Nom : Obicaz
+Pays : Belgique uniquement
+Positionnement : “club” de petites annonces orienté loisirs/hobbies (gaming, jouets/collectibles, sport/outdoor, équestre, arts & création, photo/musique…). Objectif principal : réduire arnaques + perte de temps + annonces pénibles.
+
+RÈGLES / DEMANDES PRODUIT (À INTÉGRER)
+1) Accès club :
+   - Non inscrit : voit très peu (au minimum une vitrine très limitée OU contenu flouté) + CTA “Rejoindre le club”.
+   - Inscrit non vérifié : accès partiel, mais pas d’affichage de numéros.
+   - Vérifié : téléphone belge vérifié (OTP) requis. (itsme sera plus tard → NE PAS PROMETTRE itsme en V1).
+2) Contact vendeur :
+   - Le vendeur saisit son numéro mais peut choisir “afficher / ne pas afficher”.
+   - Si “afficher”, le numéro n’est visible qu’aux membres vérifiés.
+   - Si “ne pas afficher”, contact via messages internes asynchrones (inbox), pas de chat temps réel.
+3) Qualité d’annonces :
+   - Prix obligatoire + prix minimum (ex : 1€ ou 5€).
+   - Interdire dans titre/description : “gratuit”, “0€”, “zéro euro”, “prix sur demande”, “faire offre”, “best offer”, “à discuter” (et équivalents NL).
+   - Autoriser une option claire “prix négociable” (checkbox).
+   - Éviter d’utiliser le mot “gratuit” dans les CTA / UI (pas de “0€”).
+4) Annonces non supprimées :
+   - Statuts : Brouillon / Active / Archivées (expirées) / Vendues.
+   - Une annonce expirée est “archivée” et réactivable en 1 clic (plus tard payant).
+5) Bilingue BE :
+   - L’utilisateur rédige en FR ou NL.
+   - Afficher automatiquement la traduction sous la langue source avec label “Traduction automatique”.
+   - Possibilité “modifier traduction” (optionnel V1.1).
+6) IA :
+   - Prévoir le flux : photos → IA génère titre + description + catégorie + attributs → utilisateur valide.
+   - Ne pas promettre “estimation parfaite” : utiliser une fourchette/prix conseillé “à confirmer”.
+7) Paiement :
+   - V1 : packs d’annonces via Stripe (Payment Links) + codes promo (ex : 6 mois d’essai) possibles.
+   - NE PAS promettre “paiement sécurisé intégré/escrow” si ce n’est pas dans V1.
+8) Anti-scam :
+   - Captcha/anti-bot + rate-limits (à montrer comme “anti-abus” sans détails techniques).
+   - Signalement + modération (workflow simple).
+
+STYLE MAP / RADAR (EXIGENCE)
+- Utiliser une esthétique “OpenStreetMap” (carte claire, routes fines, verts pâles, gris, labels simples).
+- L’écran “Radar” est un écran clé : une carte avec des épingles/markers pour :
+   A) vendeurs (annonces)
+   B) demandeurs (recherches / demandes)
+- Couleurs des épingles selon la “vétusté” (âge restant avant expiration) :
+   - Jaune = annonce “normale” (première moitié de durée)
+   - Orange = annonce dans la seconde moitié de durée
+   - Rouge = annonce proche de disparition (3–5 jours restants)
+- Les épingles ont un pictogramme correspondant à la catégorie (vélo, manette, cheval, pinceau, etc.).
+- Prévoir une légende simple + un filtre “vendeurs / demandeurs / les deux”.
+
+PAGES À RÉALISER (ORDRE)
+PHASE 1 (à livrer en premier) – Mobile puis Desktop
+1) Home (vitrine club) :
+   - promesse claire “moins d’arnaques, annonces propres, Belgique”
+   - CTA “Rejoindre le club” (pas “gratuit”)
+   - catégories hobby
+   - 3 preuves/points : téléphone vérifié, prix obligatoires, bilingue FR/NL
+2) Radar / Map (OpenStreetMap style) :
+   - markers vendeurs/demandeurs avec couleurs de vétusté
+   - recherche + filtres + légende
+3) Liste des annonces (cards) :
+   - cards avec badges, prix obligatoire visible
+4) Détail annonce :
+   - description langue source + traduction dessous
+   - vendeur : badge “Téléphone vérifié”
+   - bouton “Voir le numéro” (si vérifié) sinon “Vérifier pour voir le numéro”
+   - bouton “Contacter” (inbox) si le vendeur n’affiche pas son numéro
+5) Inscription / Connexion + Vérif téléphone (OTP)
+6) Créer annonce (multi-step) :
+   - upload photos
+   - IA génère (wireframe acceptable)
+   - prix obligatoire + checkbox “prix négociable”
+   - toggle “Afficher mon numéro aux membres vérifiés”
+7) Tableau de bord “Mes annonces” :
+   - Actives / Archivées / Vendues
+   - action “Réactiver” sur une annonce expirée
+   - action “Dupliquer”
+
+PHASE 2 (wireframes)
+8) Packs / Paiement (Stripe link)
+9) Page “Règles du club” (prix obligatoire, mots interdits, etc.)
+
+LIVRABLES FIGMA
+- Page “Design system” (grille 8px, typographies, couleurs, boutons, inputs, cards, badges, markers map, icônes catégories)
+- Page “Mobile screens”
+- Page “Desktop screens”
+- Prototype cliquable minimal : Home → Radar → Détail annonce → Inscription → Vérif téléphone → retour détail annonce (numéro visible) + flow publier annonce
+- Utiliser du texte réaliste (FR), prévoir labels NL/FR pour bilingue.
+
+IMPORTANT (cohérence)
+- Pas de promesses non présentes en V1 : pas d’escrow, pas d’itsme obligatoire, pas de “zéro arnaque”.
+- Ton marketing doit être “propre” : “club”, “membres vérifiés”, “annonces propres”, “Belgique”.
+
+Commence par :
+1) créer le design system (couleurs + typographies + composants + markers OSM)
+2) produire Home mobile + Radar mobile (priorité absolue)
+3) ensuite page annonce + onboarding
+Ne me pose des questions que si tu es bloqué ; sinon fais des choix raisonnables et cohérents.
