@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { ArrowLeft, Shield, Heart, Users, Ban, Lock, AlertTriangle, Star, Package, Gavel, UserCheck, Flag, RefreshCw, CheckCircle2 } from 'lucide-react';
-import logo from 'src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"';
+import logo from 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500';
 
 const RULES = [
   {
