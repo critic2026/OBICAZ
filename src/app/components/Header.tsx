@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useUser } from '../context/UserContext';
 import { useT } from '../i18n/useT';
 import { LangToggle } from './LangToggle';
-const logo = "https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=500";
+const logo = "https://images.unsplash.com/photo-1599305090748-3552d9a64fbb?w=100";
 
 export function Header() {
   const { userStatus, setUserStatus } = useUser();
